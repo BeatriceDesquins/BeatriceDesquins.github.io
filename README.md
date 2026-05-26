@@ -7,7 +7,7 @@ Structure :
 - `assets/` : justificatifs et documents liés
 
 URL attendues après activation de GitHub Pages :
-Portfolio bilingue — français / anglais.
+Portfolio bilingue — français / anglais
 
 - Français : `https://beatricedesquins.github.io/`
 - English : `https://beatricedesquins.github.io/en/`
