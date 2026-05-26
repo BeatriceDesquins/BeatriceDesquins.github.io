@@ -1108,6 +1108,41 @@
     .award-item:hover{transform:none}
   }
 
+
+
+  /* Visibilité renforcée du nom dans le hero */
+  .hero-name{
+    display:inline-flex;
+    align-items:center;
+    gap:16px;
+    margin:0 0 10px;
+    color:var(--accent-dark);
+    font-family:var(--body);
+    font-size:clamp(22px,2.3vw,34px);
+    font-weight:850;
+    line-height:1.05;
+    letter-spacing:-.04em;
+  }
+  .hero-name::after{
+    content:"";
+    display:block;
+    width:56px;
+    height:1px;
+    background:linear-gradient(90deg,var(--accent),transparent);
+    opacity:.55;
+  }
+  header .eyebrow{
+    margin-bottom:18px;
+    color:var(--ink-soft);
+  }
+  header .eyebrow::before{
+    display:none;
+  }
+  @media(max-width:700px){
+    .hero-name{font-size:22px;margin-bottom:8px}
+    .hero-name::after{width:36px}
+  }
+
 </style>
 </head>
 <body>
@@ -1142,7 +1177,8 @@
     </g>
   </svg>
   <div class="wrap">
-    <div class="eyebrow reveal">Béatrice Desquins &nbsp;&middot;&nbsp; PhD en économie &nbsp;&middot;&nbsp; Data Scientist</div>
+    <p class="hero-name reveal">Béatrice Desquins</p>
+    <div class="eyebrow reveal">PhD en économie &nbsp;&middot;&nbsp; Data Scientist</div>
     <h1 class="reveal hero-title">Économétrie, data science<br><span class="it">&amp; modélisation appliquée</span></h1>
     <p class="hero-kicker reveal">Explorer les données · Estimer les effets · Prédire les signaux · Éclairer la décision</p>
     <p class="hero-sub reveal">Docteure en économie, je développe des analyses reproductibles à l’intersection de <b>l’économétrie</b>, du <b>machine learning</b>, des <b>statistiques</b> et des <b>bases de données volumineuses</b>.</p>
