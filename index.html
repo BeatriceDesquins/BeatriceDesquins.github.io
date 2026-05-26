@@ -1029,6 +1029,85 @@
     .rbody{columns:auto}
   }
 
+
+  /* Distinctions — cartes claires harmonisées avec les publications */
+  .award-panel{
+    display:grid;
+    gap:10px;
+    margin-top:14px;
+  }
+  .award-item{
+    display:grid;
+    grid-template-columns:54px minmax(0,1fr);
+    gap:18px;
+    align-items:center;
+    padding:18px 20px;
+    border:1px solid rgba(31,41,55,.10);
+    border-radius:20px;
+    background:rgba(255,255,255,.78);
+    box-shadow:var(--shadow-sm);
+    transition:transform .25s ease, border-color .25s ease, background .25s ease, box-shadow .25s ease;
+  }
+  .award-item:hover{
+    transform:translateX(4px);
+    border-color:rgba(49,90,139,.22);
+    background:rgba(255,255,255,.92);
+    box-shadow:var(--shadow-sm);
+  }
+  .award-year{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    background:rgba(49,90,139,.08);
+    color:var(--accent-dark);
+    font-family:var(--mono);
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:.05em;
+  }
+  .award-item h3{
+    margin:0 0 4px;
+    color:var(--ink);
+    font-family:var(--body);
+    font-size:17px;
+    font-weight:750;
+    line-height:1.38;
+    letter-spacing:-.03em;
+  }
+  .award-item p{
+    margin:0;
+    color:var(--ink-soft);
+    font-size:14.8px;
+    line-height:1.62;
+  }
+  .award-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:6px;
+  }
+  .award-links a{
+    color:var(--accent-dark);
+    font-size:14px;
+    line-height:1.4;
+    border-bottom:1px solid rgba(49,90,139,.24);
+    transition:color .25s ease, border-color .25s ease;
+  }
+  .award-links a:hover{
+    color:var(--accent);
+    border-bottom-color:var(--accent);
+  }
+  @media(max-width:760px){
+    .award-item{
+      grid-template-columns:42px 1fr;
+      padding:16px;
+    }
+    .award-item:hover{transform:none}
+  }
+
 </style>
 </head>
 <body>
@@ -1277,7 +1356,7 @@
         </div>
 
         <div class="res-after">
-          <div class="after-when">Résonance — Covid-19</div>
+          <div class="after-when">Résonance avec la crise sanitaire Covid-19</div>
           <p>
             La conclusion de la thèse formulait déjà explicitement le risque d’épuisement des médecins en cas d’épidémie. Elle soulignait que les rendements décroissants du travail médical, observés chez les généralistes, accentuent la structure monopolistique du marché des soins, réduisent la qualité des soins, augmentent les coûts de santé et élèvent les risques sanitaires en contexte épidémique. La question posée était particulièrement prémonitoire : si les médecins doivent répondre simultanément aux demandes de soins et d’information des patients alors qu’ils sont déjà épuisés, où se situe la limite du système ?
           </p>
@@ -1291,7 +1370,7 @@
           </p>
 
           <p>
-            Les pistes proposées dans la thèse — coopération et substitution entre professionnels de santé, échanges avec des médecins d’autres pays via la télémédecine, flexibilité accrue des structures ambulatoires et hausse du numerus clausus — prennent alors tout leur sens. Elles répondent à une même fragilité : éviter qu’en situation épidémique, la capacité de réponse du système repose uniquement sur la prolongation de l’effort de médecins généralistes déjà épuisés.
+            Les solutions proposées dans la thèse comme la coopération et la substitution entre professionnels de santé, les échanges avec des médecins d’autres pays via la télémédecine, la flexibilité accrue des structures ambulatoires et sutout la hausse du numerus clausus prennent alors tout leur sens. Elles répondent à une même fragilité : éviter qu’en situation épidémique, la capacité de réponse du système repose uniquement sur la prolongation de l’effort de médecins généralistes déjà épuisés.
           </p>
         </div>
       </div>
@@ -1305,7 +1384,7 @@
           <p>Cette contribution met en lumière un risque de déséquilibre du marché : lorsque l’information médicale n’est pas suffisamment transparente ou régulée, elle peut orienter la demande au-delà des indications validées, fragiliser la confiance entre patients, médecins, autorités sanitaires et laboratoires, et accroître les risques de prescriptions inadaptées. La thèse propose alors plusieurs pistes : renforcer l’information indépendante à destination des médecins, améliorer la transparence des relations financières, encadrer les partenariats entre firmes et envisager une taxe sur les dépenses pharmaceutiques destinée à financer une information médicale neutre et fiable.</p>
         </div>
         <div class="res-after">
-          <div class="after-when">Résonance — Covid-19</div>
+          <div class="after-when">Résonance avec la crise sanitaire Covid-19</div>
           <p>Relue à la lumière de la crise Covid-19, cette contribution prend une portée particulière. Les débats de 2020-2021 ont montré combien la confiance dans l’information médicale, la transparence des données, l’indépendance de l’expertise et la relation entre autorités sanitaires, laboratoires, médecins et patients sont au cœur du fonctionnement des marchés de santé.</p>
           <p>La thèse posait déjà cette question : que devient un marché pharmaceutique lorsque l’information devient elle-même un instrument stratégique ? En ce sens, les enjeux soulevés autour des indications non reconnues, de la qualité perçue des traitements et de la confiance dans les acteurs du médicament résonnent directement avec les tensions observées pendant la crise sanitaire.</p>
         </div>
