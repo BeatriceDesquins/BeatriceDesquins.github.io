@@ -8,6 +8,7 @@ Structure :
 
 URL attendues après activation de GitHub Pages :
 Portfolio bilingue — français / anglais.
+Site personnel bilingue publié avec GitHub Pages.
 
 - Français : `https://beatricedesquins.github.io/`
 - English : `https://beatricedesquins.github.io/en/`
